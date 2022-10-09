@@ -1,0 +1,21 @@
+{
+  "links": {
+    "willowhd": "https://stream.crichd.vip/update/willowextra.php",
+    "willow": "https://stream.crichd.vip/update/willowcricket.php",
+    "star1": "https://gocast123.me/embed.php?player=desktop&v=star1in&vw=100%&vh=520",
+    "sportslive": "https://cricplay2.xyz/ptv-sports",
+    "starhindi": "https://gocast123.me/embed.php?player=desktop&v=starhindi&vw=100%&vh=520"
+  },
+  "links_with_ads": {
+    "astro": "https://cricplay2.xyz/astro-cricket",
+    "acc": "https://livetvon.click/cricfree/stream-370.php"
+  },
+  "othercns": {
+    "tensports": "http://cricfree.live/live/embed/ten-sports",
+
+    "supersports": "https://cricplay2.xyz/supersports-cricket",
+    "tt": "https://livetvon.click/cricfree/stream-370.php",
+    "ptv": "https://cdn2.crichd.pro/embed2.php?id=ptvsp",
+    "testing": "https://cdn2.crichd.pro/embed2.php?id=ptvsp"
+  }
+}
