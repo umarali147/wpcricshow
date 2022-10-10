@@ -2,11 +2,11 @@ let uris = {
   links: {
     star1:
       "https://gocast123.me/embed.php?player=desktop&v=star1in&vw=100%&vh=520",
+    willow: "https://stream.crichd.vip/update/willowcricket.php",
     sportslive: "https://cricplay2.xyz/ptv-sports",
+    willowhd: "https://stream.crichd.vip/update/willowextra.php",
     starhindi:
       "https://gocast123.me/embed.php?player=desktop&v=starhindi&vw=100%&vh=520",
-    willowhd: "https://stream.crichd.vip/update/willowextra.php",
-    willow: "https://stream.crichd.vip/update/willowcricket.php",
   },
   links_with_ads: {
     astro: "https://cricplay2.xyz/astro-cricket",
@@ -22,23 +22,23 @@ let uris = {
   },
 };
 
+function gotoHome() {
+  window.location.href = "https://cricshow.live";
+}
 let links = uris.links;
-
 Object.keys(links).forEach((link) => {
   let buttonHtml;
-  if(link==='star1'){
-  
-  buttonHtml=`<button class="mdc-button mdc-button--outlined mr-5 w-15 active" name="${link}">
+  if (link === "willow") {
+    buttonHtml = `<button class="mdc-button mdc-button--outlined mr-5 w-15 active" name="${link}">
     <span class="mdc-button__ripple"></span>
     <span class="mdc-button__label active" >${link}</span>
-  </button>`;}
-  else{
-    buttonHtml=`<button class="mdc-button mdc-button--outlined mr-5 w-15" name="${link}">
+  </button>`;
+  } else {
+    buttonHtml = `<button class="mdc-button mdc-button--outlined mr-5 w-15" name="${link}">
     <span class="mdc-button__ripple"></span>
     <span class="mdc-button__label" >${link}</span>
   </button>`;
   }
-  console.log(buttonHtml)
   $("#button-container").append(buttonHtml);
 });
 
@@ -88,3 +88,5 @@ $(document).delegate(".mdc-button", "click", function () {
   $(this).find(".mdc-button__label").addClass("active");
   updateSandBox($(this).find(".mdc-button__label").text());
 });
+
+updateSandBox("willow");

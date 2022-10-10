@@ -43,3 +43,6 @@
 }
 .mdc-button__labe > .active {
 }
+.cp {
+  cursor: pointer;
+}
