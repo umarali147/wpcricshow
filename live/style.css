@@ -1,0 +1,45 @@
+.container {
+  width: 90%;
+}
+.text-center {
+  text-align: center;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.header {
+  width: 90%;
+}
+.m-auto {
+  margin: auto;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.w-100 {
+  width: 100%;
+}
+.vh-80 {
+  height: 80vh;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.w10 {
+  width: 10%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-15 {
+  width: 15%;
+}
+.mr-5 {
+  margin-right: 5%;
+}
+.active {
+  background-color: #6200ee;
+  color: white !important;
+}
+.mdc-button__labe > .active {
+}
