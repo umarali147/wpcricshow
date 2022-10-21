@@ -1,8 +1,8 @@
 let uris = {
   links: {
+    willow: "https://stream.crichd.vip/update/willowcricket.php",
     star1:
       "https://gocast123.me/embed.php?player=desktop&v=star1in&vw=100%&vh=520",
-    willow: "https://stream.crichd.vip/update/willowcricket.php",
     sportslive: "https://cricplay2.xyz/ptv-sports",
     willowhd: "https://stream.crichd.vip/update/willowextra.php",
     starhindi:
@@ -29,12 +29,12 @@ let links = uris.links;
 Object.keys(links).forEach((link) => {
   let buttonHtml;
   if (link === "willow") {
-    buttonHtml = `<button class="mdc-button mdc-button--outlined mr-5 w-15 active" name="${link}">
+    buttonHtml = `<button class="channel-name mdc-button mdc-button--outlined mr-5 w-15 active" name="${link}">
     <span class="mdc-button__ripple"></span>
     <span class="mdc-button__label active" >${link}</span>
   </button>`;
   } else {
-    buttonHtml = `<button class="mdc-button mdc-button--outlined mr-5 w-15" name="${link}">
+    buttonHtml = `<button class="channel-name mdc-button mdc-button--outlined mr-5 w-15 " name="${link}">
     <span class="mdc-button__ripple"></span>
     <span class="mdc-button__label" >${link}</span>
   </button>`;
@@ -64,8 +64,9 @@ function fnBrowserDetect() {
 function updateSandBox(cn) {
   let iframz = document.getElementById("iframz");
   iframz.src = links[cn];
+  return;
   if (cn === "willow" || cn === "willowhd") {
-    if (fnBrowserDetect() === "chrome") {
+    if (fnBrowserDetect() === "chrome123213") {
       iframz.removeAttribute("sandbox");
     } else {
       if (!iframz.hasAttribute("sandbox")) {
@@ -81,7 +82,6 @@ function updateSandBox(cn) {
   }
 }
 $(document).delegate(".mdc-button", "click", function () {
-  console.log("testin");
   $(".mdc-button").removeClass("active");
   $(".mdc-button").find(".mdc-button__label").removeClass("active");
   $(this).addClass("active");
